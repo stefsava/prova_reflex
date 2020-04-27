@@ -1,11 +1,11 @@
 <button href="#"
-  data-reflex="click->CounterReflex#increment"
+  data-controller="counter"
+  data-action="click->counter#increment"
   data-step=-1
-  data-count="<%= @count.to_i %>"
 >-</button>
-<%= @count.to_i %>
+<%= session[:count] %>
 <button href="#"
-  data-reflex="click->CounterReflex#increment"
+  data-controller="counter"
+  data-action="click->counter#increment"
   data-step=1
-  data-count="<%= @count.to_i %>"
 >+</button>
